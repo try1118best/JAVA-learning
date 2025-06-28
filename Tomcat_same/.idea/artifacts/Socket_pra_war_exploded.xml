@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Socket_pra:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Socket_pra_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Socket_pra" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="Socket_pra/web/Web" />
+    </root>
+  </artifact>
+</component>
