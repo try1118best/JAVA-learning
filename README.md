@@ -1,2 +1,2 @@
-# JAVA-learning
-我的java学习日志
+# Java-learning
+我的Java学习日志
