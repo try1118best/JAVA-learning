@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="32-MySQL:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/32_MySQL_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="MySQL_DBUtils_shit" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.mysql:mysql-connector-j:8.0.33" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.21.9" />
+          <element id="library" level="project" name="Maven: c3p0:c3p0:0.9.1.2" />
+          <element id="library" level="project" name="Maven: commons-dbutils:commons-dbutils:1.8.1" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="32-MySQL/web/Web" />
+    </root>
+  </artifact>
+</component>
