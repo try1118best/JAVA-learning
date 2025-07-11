@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace就是命名空间,把文件位置写出来就行 -->
+<mapper namespace="com.test.mapper.UserMapper">
+    <!--自定义SQL-->
+    <select id="get" parameterType="Integer"
+            resultType="com.test.entity.User">
+        <!--写SQL，id就是传进来的参数-->
+        select * from  user where id = #{id}
+    </select>
+
+</mapper>

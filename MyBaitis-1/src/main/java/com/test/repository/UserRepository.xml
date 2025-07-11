@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace就是命名空间,把文件位置写出来就行 -->
+<mapper namespace="com.test.repository.UserRepository">
+    <!--自定义SQL-->
+    <insert id="add" parameterType="com.test.entity.User">
+        insert into user(username,password,age) values
+            (#{username},#{password},#{age})
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.Integer">
+        delete from user where id = #{id}
+    </delete>
+
+    <update id="update" parameterType="com.test.entity.User">
+        update user set username = #{username},password = #{password},age =
+            #{age} where id = #{id}
+    </update>
+
+    <select id="getById" parameterType="java.lang.Integer"
+            resultType="com.test.entity.User">
+        select * from user where id = #{id}
+    </select>
+</mapper>
